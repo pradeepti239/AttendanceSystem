@@ -16,6 +16,9 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 
+    <!-- js for graphs -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
     <!-- Custom files -->
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/main.js"></script>
@@ -26,6 +29,7 @@
 <body>
 
     <div class="lightBlue_section">
+
     </div>
 
     <!-- Navbar start -->
@@ -60,18 +64,147 @@
             <h1> Hello Denisha</h1>
             <ul class="nav nav-tabs" id="myTab" role="tablist">
                 <li class="nav-item nav_item" role="presentation">
-                  <button class="nav-link below_header_btn active"  data-bs-toggle="tab" data-bs-target="#overview" type="button" role="tab" aria-controls="home" aria-selected="true">Overview</button>
+                    <button class="nav-link below_header_btn active" data-bs-toggle="tab" data-bs-target="#overview"
+                        type="button" role="tab" aria-controls="home" aria-selected="true">Overview</button>
                 </li>
                 <li class="nav-item nav_item" role="presentation">
-                  <button class="nav-link below_header_btn" id="profile-tab" data-bs-toggle="tab" data-bs-target="#calendar" type="button" role="tab" aria-controls="profile" aria-selected="false">Calendar</button>
+                    <button class="nav-link below_header_btn" id="profile-tab" data-bs-toggle="tab"
+                        data-bs-target="#calendar" type="button" role="tab" aria-controls="profile"
+                        aria-selected="false">Calendar</button>
                 </li>
-                
-              </ul>
+            </ul>
+        </div>
+
+
+        <!-- upper cards section -->
+        <div class="graphs">
+            <div class="row gy-4 justify-content-around">
+
+                <div class="col-3 shadow-sm d-flex flex-column justify-content-around total_absent">
+                    <div class="row">
+                        <div class="col-10">Total Absent</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <h1>85</h1>
+                        </div>
+
+                        <div class="col-4 ">
+                            <select class="form-select form-select-sm">
+
+                                <option>2022</option>
+                                <option>2022</option>
+                                <option>2022</option>
+                                <option>2022</option>
+                                <option>2022</option>
+
+                            </select>
+                        </div>
+                        <div class="col-4">
+                            <select class="form-select form-select-sm">
+                                <option selected>January</option>
+                                <option>February</option>
+                                <option>March</option>
+                                <option>April</option>
+                                <option>May</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="red_text col-10">3% decrease</div>
+                    </div>
+                </div>
+
+                <div class="col-3 shadow-sm py-2 line_chart">
+                    <div class="row align-items-center">
+                        <div class="col-7 p-0">
+                            <div id="chart_div"></div>
+                        </div>
+                        <div class="col-5">
+                            <select class="form-select form-select-sm">
+                                <option selected>January</option>
+                                <option>February</option>
+                                <option>March</option>
+                                <option>April</option>
+                                <option>May</option>
+                            </select>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-3 shadow-sm py-2 pie_chart">
+                    <div class="row align-items-center">
+                        <div class="col-8 p-0">
+                            <div id="piechart" class="p-0"></div>
+                        </div>
+                        <div class="col-4">
+                            <select class="form-select form-select-sm">
+                                <option selected>January</option>
+                                <option>February</option>
+                                <option>March</option>
+                                <option>April</option>
+                                <option>May</option>
+                            </select>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <!-- view teachers section -->
+
+        <div class="table_container mt-3">
+            
+                <table class="teacher_table mx-auto">
+                    <caption>Teacher's List</caption>
+                    <tr class="table_title">
+                        <th>Name</th>
+                        <th>Email Address</th>
+                        <th>Last Login</th>
+                        <th>Action</th>
+                    </tr>
+
+                    <tr>
+                        <td>Denisha Singh</td>
+                        <td>denisha@gmail.com</td>
+                        <td>9:30 PM 03/03/2022</td>
+                        <td class="action"><i class="far fa-edit"></i></td>
+                    </tr>
+
+                    <tr>
+                        <td>Denisha Singh</td>
+                        <td>denisha@gmail.com</td>
+                        <td>9:30 PM 03/03/2022</td>
+                        <td class="action"><i class="far fa-edit"></i></td>
+                    </tr>
+
+                    <tr>
+                        <td>Denisha Singh</td>
+                        <td>denisha@gmail.com</td>
+                        <td>9:30 PM 03/03/2022</td>
+                        <td class="action"><i class="far fa-edit"></i></td>
+                    </tr>
+
+                    <tr>
+                        <td>Denisha Singh</td>
+                        <td>denisha@gmail.com</td>
+                        <td>9:30 PM 03/03/2022</td>
+                        <td class="action"><i class="far fa-edit"></i></td>
+                    </tr>
+
+
+
+                </table>
            
+            <!-- table end -->
         </div>
 
         <!--Container Main end-->
     </body>
+
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
