@@ -28,7 +28,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
     }
     linkColor.forEach(l => l.addEventListener('click', colorLink))
 
-<<<<<<< HEAD
 });
 
 // for line chart
@@ -92,6 +91,3 @@ function drawChart() {
 
     chart.draw(data, options);
 }
-=======
-});
->>>>>>> 7644b0e9390279d015c4e04cc547975deda21d09
