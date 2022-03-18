@@ -1,23 +1,36 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600;700;800;900&display=swap');
+<<<<<<< HEAD
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
+=======
+/* @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap"); */
+>>>>>>> 7644b0e9390279d015c4e04cc547975deda21d09
 
 :root {
     --header-height: 2rem;
     --nav-width: 4.5%;
     --first-color-light: #E9F6FF;
     --white-color: #878787;
+<<<<<<< HEAD
     /* --body-font: 'Raleway', sans-serif; */
     /* --body-font: 'Poppins', sans-serif; */
     --body-font: 'Nunito', sans-serif;
+=======
+    --body-font: 'Raleway', sans-serif;;
+    /* --body-font: 'Poppins', sans-serif; */
+    /* --body-font: 'Nunito', sans-serif; */
+>>>>>>> 7644b0e9390279d015c4e04cc547975deda21d09
     --normal-font-size: 1rem;
     --z-fixed: 100;
     --primary-color: #027CD4;
     --light-primary: #E9F6FF;
     --font-color: #011B2E;
+<<<<<<< HEAD
     --red-color:#F90808;
     --green-color:#20C997;
     --yellow-color:#FFB55E;
+=======
+>>>>>>> 7644b0e9390279d015c4e04cc547975deda21d09
 }
 
 *,
@@ -33,11 +46,19 @@ body {
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
     transition: .5s;
+<<<<<<< HEAD
+=======
+    /* overflow-x: hidden; */
+>>>>>>> 7644b0e9390279d015c4e04cc547975deda21d09
 }
 
 .row{
     margin: 0 !important;
     padding: 0 !important;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 7644b0e9390279d015c4e04cc547975deda21d09
 }
 
 a {
@@ -165,8 +186,12 @@ a {
 .height-100 {
     height: 100vh
 }
+<<<<<<< HEAD
 
 @media screen and (max-width: 1024px) {
+=======
+@media screen and (max-width: 1024px){
+>>>>>>> 7644b0e9390279d015c4e04cc547975deda21d09
     :root {
         --nav-width: 7%;
     }
@@ -221,7 +246,11 @@ a {
     z-index: -10;
 }
 
+<<<<<<< HEAD
 .below_header {
+=======
+.below_header{
+>>>>>>> 7644b0e9390279d015c4e04cc547975deda21d09
     display: flex;
     flex-direction: column;
 }
@@ -230,6 +259,7 @@ a {
     font-weight: 700;
     line-height: 42px;
     padding: 3%;
+<<<<<<< HEAD
     font-family:'Raleway', sans-serif; ;
 }
 
@@ -238,16 +268,30 @@ a {
 }
 
 .below_header_btn {
+=======
+}
+
+.nav_item{
+    padding: 0 1%;
+}
+
+.below_header_btn{
+>>>>>>> 7644b0e9390279d015c4e04cc547975deda21d09
     border-radius: 10px 10px 0 0 !important;
     background-color: var(--primary-color) !important;
     color: white;
 }
 
+<<<<<<< HEAD
 .nav-item .active {
+=======
+.nav-item .active{
+>>>>>>> 7644b0e9390279d015c4e04cc547975deda21d09
     background-color: white !important;
     color: var(--font-color) !important;
 }
 
+<<<<<<< HEAD
 /* Admin dashboad */
 
 .red_text{
@@ -312,3 +356,117 @@ a {
 .teacher_table tr:hover {
     background-color: var(--light-primary);
 }
+=======
+/* .container1{
+    position: fixed;
+    top: 45%;
+    left:50%;
+    margin-left: 5%;
+
+    transform: translate(-50%,-50%);
+} */
+
+.container1{
+    margin-top: 5vh;
+    margin-right: 2%;
+    padding-top: 2%;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+    /* padding-left: 2%; */
+    
+}
+
+.form-control{
+    width:55% !important;
+}
+
+.form_label{
+    width: 65%;
+}
+
+.red_text{
+    color: red;
+}
+
+
+
+option:hover {
+    background-color: yellow  !important;
+}
+
+.button{
+    margin-left: 80%;
+    margin-top: 4%;
+    margin-bottom: 3%;
+    padding-bottom: 3%;
+    
+    
+}
+
+.btn{
+    background-color: var(--primary-color) !important;
+
+}
+
+.createstudent h2{
+    font-size: 2.5vh;
+    padding-top: 2%;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+
+    .container1{
+        font-size: 10px;
+    }
+
+    .createstudent h2{
+        font-size: 1vh;
+        padding-top: 5%;
+        font-weight: 600;
+    }
+
+    .container1{
+        margin-top: 3vh;
+        margin-right: 0.5%;
+        padding-top: 2%;
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+        /* padding-left: 2%; */
+        
+    }
+
+   
+    /* .form-control{
+        width:55% ;
+    } */
+
+
+}
+
+@media screen and (max-width: 820px) {
+
+    .container1{
+        font-size: 10px;
+    }
+
+   
+    /* .form-control{
+        width:55% ;
+    } */
+
+    .createstudent h2{
+        font-size: 1vh;
+        padding-top: 5%;
+        font-weight: 600;
+    }
+
+    .container1{
+        margin-top: 3vh;
+        margin-right: 0.5%;
+        padding-top: 2%;
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+        /* padding-left: 2%; */
+        
+    }
+}
+
+>>>>>>> 7644b0e9390279d015c4e04cc547975deda21d09
