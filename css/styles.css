@@ -285,10 +285,16 @@ a {
 /* for table */
 
 .teacher_table {
+    margin-top: 0%;
     width: 100%;
     border-style: hidden;
     font-size: 0.8rem;
     caption-side: top;
+}
+
+.addbtn{
+    margin-top: 2%;
+    margin-left: 90%;
 }
 
 .teacher_table td, .teacher_table th {
