@@ -1,3 +1,5 @@
+// for nav bar
+
 document.addEventListener("DOMContentLoaded", function (event) {
 
     const showNavbar = (toggleId, navId, bodyId, headerId) => {
@@ -83,11 +85,30 @@ function drawChart() {
     var options = {
         slices: { 0: { color: '#20C997' }, 1: { color: '#F90808' }, 2: { color: '#FFB55E' } },
         legend: 'none',
-        responsive:'false',
+        responsive: 'false',
         backgroundColor: 'transparent',
     };
 
     var chart = new google.visualization.PieChart(document.getElementById('piechart'));
 
     chart.draw(data, options);
+}
+
+// for attendance table
+
+let student = {
+    '801': 1,
+    '802': 1,
+    '803': 1
+}
+
+let imageLink = {
+    0: 'A.svg',
+    1: 'P.svg',
+    2: 'L.svg'
+}
+
+function toggleState(key) {
+    student[key] = (student[key] + 1) % 3;
+    document.getElementById('r_' + key).src = './images/' + imageLink[student[key]];
 }
