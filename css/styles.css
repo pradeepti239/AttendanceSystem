@@ -389,6 +389,14 @@ option:hover {
         
     }
 
+    .cardclass{
+        font-size: 1vh;
+    }
+
+    .card-body{
+        font-size: 1%;
+    }
+
    
     /* .form-control{
         width:55% ;
@@ -424,3 +432,67 @@ option:hover {
     }
 }
 
+/*Teacher dashboad */
+
+.cardclass{
+    width: 98%;
+    margin-top: 2%;
+}
+
+.card-icon{
+   
+    color: #20C997;
+}
+
+.bookicon{
+    padding-left: 40px;
+    padding-top: 35px;
+}
+
+
+.takeAttendancebtn{
+    margin-top: 17%;
+}
+
+.card-present{
+    margin-top: 20%;
+}
+
+.card-absent{
+    margin-top: 20%;
+}
+
+.card-leave{
+    margin-top: 20%;
+}
+
+.card-batchsem{
+    
+    color: var(--primary-color);
+}
+
+.vl {
+    border-left: 3px solid rgb(187, 184, 184);
+    height: 60px;
+    margin-left: 85%;
+   
+    
+  }
+
+  .presentnum{
+      color: #20C997;
+     
+  }
+
+  .leavenum{
+    color: yellow;
+  }
+
+  .absentnum{
+    color: red;
+  }
+
+  .cardclass2{
+    width: 98%;
+    margin-top: 4%;
+  }
