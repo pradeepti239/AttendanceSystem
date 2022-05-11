@@ -232,21 +232,25 @@ a {
     line-height: 42px;
     padding: 3%;
     font-family: 'Raleway', sans-serif;
-    ;
 }
 
 .nav_item {
     padding: 0 1%;
+    line-height: 2rem;
 }
 
 .below_header_btn {
     border-radius: 10px 10px 0 0 !important;
+    margin-right: 1%;
     background-color: var(--primary-color) !important;
     color: white;
 }
 
+.below_header .arrows {
+    color: var(--primary-color);
+}
 
-.nav-item .active {
+.nav .active {
     background-color: white !important;
     color: var(--font-color) !important;
 }
@@ -268,12 +272,10 @@ a {
 @media screen and (max-width:768px) {
 
     .pie_chart {
-        /* width: 45%; */
         display: none;
     }
 
     .line_chart {
-        /* width: 45%; */
         display: none;
     }
 
@@ -483,16 +485,16 @@ option:hover {
 }
 
 .presentnum {
-    color: #20C997;
+    color: var(--green-color);
 
 }
 
 .leavenum {
-    color: yellow;
+    color: var(--yellow-color);
 }
 
 .absentnum {
-    color: red;
+    color: var(--red-color);
 }
 
 .cardclass2 {
@@ -523,4 +525,112 @@ option:hover {
 
 .attendance_img {
     width: 1.5em;
+}
+
+/* for view report page */
+
+.card-title {
+    font-size: 15px;
+}
+
+.card-text {
+    font-size: 40px;
+}
+
+.card-columns .card {
+    display: inline-block;
+}
+
+.sizePie {
+    max-height: 170px;
+}
+
+.pie_chart_report {
+    width: 32%;
+}
+
+
+/* for tabs */
+
+.wrapper-nav {
+    position: relative;
+    margin: 0 auto;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    height: 60px;
+}
+
+.list {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    min-width: 3500px;
+    margin-top: 0px;
+}
+
+.list li {
+    display: table-cell;
+    position: relative;
+    text-align: center;
+    cursor: grab;
+    cursor: -webkit-grab;
+    color: #efefef;
+    vertical-align: middle;
+}
+
+/* .scroller {
+    text-align: center;
+    cursor: pointer;
+    display: none;
+    padding: 7px;
+    padding-top: 13px;
+    white-space: no-wrap;
+    vertical-align: middle;
+    background-color: #fff;
+} */
+
+div::-webkit-scrollbar {
+    width: 1px;
+    /* width of the entire scrollbar  */
+}
+
+/* div::-webkit-scrollbar-track {
+    background: orange;
+    /* color of the tracking area
+} */
+
+div::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color);
+    /* color of the scroll thumb */
+    border-radius: 5px;
+    /* roundness of the scroll thumb */
+    border: 7px solid white;
+    /* creates padding around scroll thumb */
+}
+
+/* Buttons */
+
+/* left */
+div::-webkit-scrollbar-button:single-button:horizontal:decrement {
+    height: 12px;
+    width: 12px;
+    background-position: 3px 3px;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(2, 124, 212)'><polygon points='0,5 5,10 5,0'/></svg>");
+}
+
+/* right */
+
+::-webkit-scrollbar-button:single-button:horizontal:increment {
+    height: 12px;
+    width: 12px;
+    background-position: 3px 3px;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(2, 124, 212)'><polygon points='0,0 0,10 5,5'/></svg>");
+}
+
+/* scrollbar for firefox */
+div {
+    scrollbar-width: thin;
+    /* "auto" or "thin" */
+    scrollbar-color: var(--primary-color) white;
+    /* scroll thumb and track */
 }
