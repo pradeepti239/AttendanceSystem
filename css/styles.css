@@ -241,7 +241,7 @@ a {
 
 .below_header_btn {
     border-radius: 10px 10px 0 0 !important;
-    margin-right: 1%;
+    /* margin-right: 1%; */
     background-color: var(--primary-color) !important;
     color: white;
 }
@@ -620,7 +620,7 @@ div::-webkit-scrollbar-button:single-button:horizontal:decrement {
 
 /* right */
 
-::-webkit-scrollbar-button:single-button:horizontal:increment {
+div::-webkit-scrollbar-button:single-button:horizontal:increment {
     height: 12px;
     width: 12px;
     background-position: 3px 3px;
